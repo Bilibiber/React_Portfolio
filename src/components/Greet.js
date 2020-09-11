@@ -8,7 +8,7 @@ import './Timer.css'
 const Greet = () => {
 
     let time = new Date().toLocaleTimeString();
-
+    
     const [currentTime, setCurrentTime] = useState(time);
 
     let date = new Date();

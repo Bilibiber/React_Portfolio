@@ -3,8 +3,8 @@ import './Timer.css'
 
 class Welcome extends Component{
     render(){
-        return  
+        return <h1>Hi Mason</h1>
     }
 }
 
-export default Welcome;
+export default Welcome
