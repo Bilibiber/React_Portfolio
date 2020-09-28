@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFan, faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
-import { Button } from './Button.js'
 import './Navbar.css'
 
 function Navbar() {
@@ -43,10 +42,7 @@ function Navbar() {
                         <Link to="/" className="nav-links" onClick={closeMenu}>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/demo" className="nav-links" onClick={closeMenu}>Demos</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/about" className="nav-links" onClick={closeMenu}>About me</Link>
+                        <Link to="/about" className="nav-links" onClick={closeMenu}>About</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/resume" className="nav-links" onClick={closeMenu}>Resume</Link>
@@ -55,7 +51,6 @@ function Navbar() {
                         <Link to="/sign-up" className="nav-links-mobile" onClick={closeMenu}>Click me</Link>
                     </li>
                 </ul>
-                {button && <Button buttonStyle="btn-out">Sign Up</Button>}
             </div>
         </nav>
         </>

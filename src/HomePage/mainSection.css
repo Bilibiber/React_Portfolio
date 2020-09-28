@@ -34,6 +34,7 @@ video{
 
 .main-btns .btn{
     margin: 6px;
+    width: 100%
 }
 
 @media screen and (max-width: 960px) {
