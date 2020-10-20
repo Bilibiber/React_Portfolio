@@ -1,0 +1,68 @@
+.sideMenu {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  transition: 180ms ease;
+  width: 50px;
+  height: 91vh;
+  top: 0;
+  bottom: 0;
+}
+.sideMenu.exited {
+  width: 50px;
+}
+.sideMenu.active {
+  width: 250px;
+}
+.sideMenu-header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 48px;
+  margin-top: 12px;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.sideMenuList {
+  padding-top: 8px;
+  list-style: none;
+}
+
+.sideMenuList a {
+  text-decoration: none;
+}
+
+.toolBarItem {
+  min-height: 3.6rem;
+  position: relative;
+}
+.toolbarInner {
+  cursor: pointer;
+  box-sizing: border-box;
+  min-height: 3.6rem;
+  height: 3.6rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+.toolbarInner:hover {
+  background-color: white;
+}
+.toolbarInner span {
+  margin: 0 8px;
+  color: #34373d;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-icon {
+  text-align: center;
+  color: #767678;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+}

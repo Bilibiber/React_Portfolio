@@ -1,0 +1,10 @@
+.todoList
+{
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 40px;
+    width: 40vh;
+    text-align: left !important;
+    padding-left: 8px;
+}

@@ -28,6 +28,12 @@ function Cards() {
                             label="Formik"
                             path="/formik"
                         />
+                        <CardItems
+                            src="../images/formik_black.jpg"
+                            text="React Todo List"
+                            label="Todo List"
+                            path="/TodoList"
+                        />
                     </ul>
                 </div>
             </div>

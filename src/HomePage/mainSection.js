@@ -12,7 +12,6 @@ function MainSection() {
         anchor.scrollIntoView({behavior: "smooth", block: "end"})
     }
 
-
     return (
         <>
             <div className='main-container'>
