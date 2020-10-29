@@ -16,6 +16,7 @@ import ToysIcon from "@material-ui/icons/Toys"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
 import CloseIcon from "@material-ui/icons/Close"
+import MuiTodoTable from "./MuiTodoTable"
 const drawerWidth = 240
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -83,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "18px !important",
   },
 }))
-
+var localTodoList = []
 function MuiNav(props) {
   const { match, history } = props
   const { params } = match
@@ -171,7 +172,7 @@ function MuiNav(props) {
         </Tabs>
       </Drawer>
 
-      {selectedTab === 0 && <h1>Hello this is My Day</h1>}
+      {selectedTab === 0 && <MuiTodoTable />}
       {selectedTab === 1 && <h1>Hello this is Important</h1>}
       {selectedTab === 2 && <h1>Hello this is Scheduled</h1>}
       {selectedTab === 3 && <h1>Hello this is Main</h1>}
