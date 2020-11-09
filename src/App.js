@@ -1,11 +1,12 @@
 import React from "react"
 import "./App.css"
+import "normalize.css"
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
 import Home from "./HomePage/Home"
 import CodePen from "./CodePen/CodePen"
 import TodoList from "./TodoList/TodoList"
 import MuiNav from "./Mui-todo/MuiNav"
-import Netflix from "./Netflix/Netflix"
+import Netflix from "./Netflix/pages/Netflix-home"
 
 function App() {
   return (
