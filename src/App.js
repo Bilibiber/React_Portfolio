@@ -7,6 +7,9 @@ import CodePen from "./CodePen/CodePen"
 import TodoList from "./TodoList/TodoList"
 import MuiNav from "./Mui-todo/MuiNav"
 import Netflix from "./Netflix/pages/Netflix-home"
+import NetflixSignIn from "./Netflix/pages/SignIn"
+import NetflixSignUp from "./Netflix/pages/SignUp"
+import NetflixBrowse from "./Netflix/pages/Browse"
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/codePen" exact component={CodePen} />
           <Route path="/TodoList" exact component={TodoList} />
           <Route path="/Netflix" exact component={Netflix} />
+          <Route path="/Netflix/signIn" exact component={NetflixSignIn} />
+          <Route path="/Netflix/signUp" exact component={NetflixSignUp} />
+          <Route path="/Netflix/browse" exact component={NetflixBrowse} />
           <Redirect exact from="/MuiTodo" to="/MuiTodo/main" />
           <Route path="/MuiTodo/:page?" exact render={(props) => <MuiNav {...props} />} />
         </Switch>

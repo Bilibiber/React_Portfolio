@@ -1,6 +1,7 @@
-import React from "react"
-import FAQData from "../preloadedData/FAQ.json"
-import NetflixFAQ from "../FAQ/NetflixFAQ"
+import React from 'react'
+import FAQData from '../preloadedData/FAQ.json'
+import NetflixFAQ from '../FAQ/NetflixFAQ'
+import NetflixForm from '../Forms/NetflixForm'
 
 export default function FAQContainer() {
   return (
@@ -13,7 +14,12 @@ export default function FAQContainer() {
             <NetflixFAQ.Body>{item.body}</NetflixFAQ.Body>
           </NetflixFAQ.Item>
         ))}
-        <NetflixFAQ.Frame></NetflixFAQ.Frame>
+        <NetflixForm>
+          <NetflixForm.FAQInput placeholder="Email Address" />
+          <NetflixForm.FAQButton>Try it Now</NetflixForm.FAQButton>
+          <NetflixForm.FAQBreak />
+          <NetflixForm.FAQInputText>Ready to Watch? Enter your email to create or restart your membership today</NetflixForm.FAQInputText>
+        </NetflixForm>
       </NetflixFAQ>
     </>
   )

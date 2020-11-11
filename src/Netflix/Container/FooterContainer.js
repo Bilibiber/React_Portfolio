@@ -5,7 +5,7 @@ function FooterContainer() {
   return (
     <>
       <NetflixFooter>
-        <NetflixFooter.Title>Question? </NetflixFooter.Title>
+        <NetflixFooter.Title>Question?</NetflixFooter.Title>
         <NetflixFooter.Break />
         <NetflixFooter.Row>
           <NetflixFooter.Column>

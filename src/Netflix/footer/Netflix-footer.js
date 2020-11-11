@@ -2,7 +2,7 @@ import React from "react"
 import { Break, Column, Container, Link, Row, Text, Title } from "./style/FooterStyled"
 
 export default function NetflixFooter({ children, ...restProps }) {
-  return <Container>{children}</Container>
+  return <Container {...restProps}>{children}</Container>
 }
 
 NetflixFooter.Row = function NetflixFooterRow({ children, ...restProps }) {
