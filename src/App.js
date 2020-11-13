@@ -11,8 +11,9 @@ import NetflixSignIn from './Netflix/pages/SignIn'
 import NetflixSignUp from './Netflix/pages/SignUp'
 import NetflixBrowse from './Netflix/pages/Browse'
 import { IsUserRedirect, ProtectedRoute } from './Netflix/Auth/AuthRoute'
+import useAuthListener from './Netflix/Hooks/AuthListener'
 function App() {
-  const user = null
+  const { user } = useAuthListener()
   return (
     <>
       <Router>
