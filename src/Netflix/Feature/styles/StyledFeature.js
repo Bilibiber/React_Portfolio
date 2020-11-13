@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
   margin-left: 340px;
   margin-right: 340px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 58px;
   font-weight: bold;
   margin-bottom: 10px;

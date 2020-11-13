@@ -1,5 +1,5 @@
-import React from "react"
-import NetflixFooter from "../footer/Netflix-footer"
+import React from 'react'
+import NetflixFooter from '../footer/Netflix-footer'
 
 function FooterContainer() {
   return (
@@ -9,9 +9,7 @@ function FooterContainer() {
         <NetflixFooter.Break />
         <NetflixFooter.Row>
           <NetflixFooter.Column>
-            <NetflixFooter.Link href="https://help.netflix.com/zh-cn/node/412">
-              FAQ
-            </NetflixFooter.Link>
+            <NetflixFooter.Link href="https://help.netflix.com/zh-cn/node/412">FAQ</NetflixFooter.Link>
             <NetflixFooter.Link href="#">Investor Relations </NetflixFooter.Link>
             <NetflixFooter.Link href="#">Ways to Watch</NetflixFooter.Link>
             <NetflixFooter.Link href="#">Corporate Information</NetflixFooter.Link>

@@ -1,6 +1,6 @@
-import React from "react"
-import NIndex from "../jumbotron/Netflix-jumbotron"
-import NInfo from "../preloadedData/Jumbo.json"
+import React from 'react'
+import NIndex from '../jumbotron/Netflix-jumbotron'
+import NInfo from '../preloadedData/Jumbo.json'
 
 export default function JumbotronContainer() {
   return (
