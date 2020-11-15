@@ -7,7 +7,7 @@ export function ProfileContainer({ user, setProfile }) {
     <>
       <Header bg={false}>
         <Header.Frame>
-          <Header.Logo to="/Netflix" src="/images/icons/logo.svg" alt="Netflix" />
+          <Header.Logo to='/Netflix' src='/images/icons/logo.svg' alt='Netflix' />
         </Header.Frame>
       </Header>
 

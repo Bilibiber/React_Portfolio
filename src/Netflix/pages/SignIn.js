@@ -34,19 +34,19 @@ function SignIn() {
   return (
     <>
       <GlobalStyle />
-      <Header>
+      <Header height='100vh'>
         <UserForm>
           <UserForm.Title>Sign In</UserForm.Title>
           {errors && <UserForm.Errors>{errors}</UserForm.Errors>}
           <UserForm.Base onSubmit={handleSignIn}>
-            <UserForm.Input placeholder="Email address" value={email} onChange={({ target }) => setEmail(target.value)} />
-            <UserForm.Input type="password" placeholder="Password" autoComplete="off" value={password} onChange={({ target }) => setPassword(target.value)} />
-            <UserForm.Button disabled={isInvalid} type="submit">
+            <UserForm.Input placeholder='Email address' value={email} onChange={({ target }) => setEmail(target.value)} />
+            <UserForm.Input type='password' placeholder='Password' autoComplete='off' value={password} onChange={({ target }) => setPassword(target.value)} />
+            <UserForm.Button disabled={isInvalid} type='submit'>
               Sign In
             </UserForm.Button>
           </UserForm.Base>
           <UserForm.Text>
-            New to Netflix? <UserForm.Link to="/Netflix/signUp">Sign Up here</UserForm.Link>
+            New to Netflix? <UserForm.Link to='/Netflix/signUp'>Sign Up here</UserForm.Link>
           </UserForm.Text>
           <UserForm.TextSmall>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more</UserForm.TextSmall>
         </UserForm>

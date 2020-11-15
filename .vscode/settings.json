@@ -1,2 +1,6 @@
 {
+    "prettier.jsxSingleQuote": true,
+    "cSpell.words": [
+        "Dumond"
+    ]
 }
