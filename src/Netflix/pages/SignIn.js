@@ -34,7 +34,7 @@ function SignIn() {
   return (
     <>
       <GlobalStyle />
-      <Header height='100vh'>
+      <Header height='100vh' ButtonText='Sign Up'>
         <UserForm>
           <UserForm.Title>Sign In</UserForm.Title>
           {errors && <UserForm.Errors>{errors}</UserForm.Errors>}

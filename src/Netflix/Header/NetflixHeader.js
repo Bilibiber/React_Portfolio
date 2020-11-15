@@ -24,7 +24,7 @@ NetflixHeader.Search = function NetflixHeaderSearch({ search, setSearch, ...rest
       <SearchIcon onClick={() => setActive(!searchActive)}>
         <img src='/images/icons/search.png' alt='Search' />
       </SearchIcon>
-      <SearchInput value={search} onChange={({ target }) => setSearch(target)} placeholder='Search films or series' active={searchActive} />
+      <SearchInput value={search} onChange={({ target }) => setSearch(target.value)} placeholder='Search films or series' active={searchActive} />
     </Search>
   )
 }

@@ -11,15 +11,15 @@ function Netflix() {
   return (
     <>
       <GlobalStyle />
-      <HeaderContainer>
+      <HeaderContainer ButtonText='Sign In'>
         <Feature>
           <Feature.Title>Unlimited movies, TV shows, and more.</Feature.Title>
           <Feature.SubTitle>Watch anywhere. Cancel anytime.</Feature.SubTitle>
           <NetflixForm>
             <NetflixForm.FAQInputText>Ready to watch? Enter your email to create or restart your membership.</NetflixForm.FAQInputText>
             <NetflixForm.FAQBreak />
-            <NetflixForm.FAQInput placeholder="Email Address" type="text" />
-            <NetflixForm.FAQButton to="/Netflix/signUp">Get Stated</NetflixForm.FAQButton>
+            <NetflixForm.FAQInput placeholder='Email Address' type='text' />
+            <NetflixForm.FAQButton to='/Netflix/signUp'>Get Stated</NetflixForm.FAQButton>
             <NetflixForm.FAQBreak />
           </NetflixForm>
         </Feature>

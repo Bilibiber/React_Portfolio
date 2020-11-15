@@ -16,7 +16,6 @@ function SignUp() {
 
   const handleSignUp = (event) => {
     event.preventDefault()
-
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
@@ -40,7 +39,7 @@ function SignUp() {
   return (
     <>
       <GlobalStyle />
-      <Header height='100vh'>
+      <Header height='100vh' ButtonText='Sign In'>
         <UserForm>
           <UserForm.Title>Sign Up</UserForm.Title>
           {errors && <UserForm.Errors>{errors}</UserForm.Errors>}

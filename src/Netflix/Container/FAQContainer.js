@@ -17,8 +17,8 @@ export default function FAQContainer() {
         <NetflixForm>
           <NetflixForm.FAQInputText>Ready to Watch? Enter your email to create or restart your membership today</NetflixForm.FAQInputText>
           <NetflixForm.FAQBreak />
-          <NetflixForm.FAQInput placeholder="Email Address" />
-          <NetflixForm.FAQButton>Try it Now</NetflixForm.FAQButton>
+          <NetflixForm.FAQInput placeholder='Email Address' />
+          <NetflixForm.FAQButton to='/Netflix/signUp'>Try it Now</NetflixForm.FAQButton>
         </NetflixForm>
       </NetflixFAQ>
     </>

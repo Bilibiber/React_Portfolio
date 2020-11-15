@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro'
-
+import { Link as ReactRoute } from 'react-router-dom'
 export const Container = styled.div`
   max-width: 670px;
   display: flex;
@@ -13,7 +13,8 @@ export const Container = styled.div`
     align-items: center;
   }
 `
-export const Button = styled.button`
+export const Button = styled(ReactRoute)`
+  text-decoration: none;
   display: flex;
   border-radius: 0 2px 2px 0;
   align-items: center;

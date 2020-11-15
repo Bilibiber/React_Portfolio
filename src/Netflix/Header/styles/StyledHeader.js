@@ -133,6 +133,7 @@ export const TextLink = styled.p`
   margin-right: 30px;
   margin-top: 30px;
   margin-left: ${(props) => props.left || 'none'};
+  font-weight: ${({ active }) => (active === 'true' ? '700' : 'normal')};
   font-size: 24px;
   cursor: pointer;
 

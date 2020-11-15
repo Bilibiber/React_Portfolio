@@ -5,6 +5,8 @@ import NetflixLoading from '../Loading/NetflixLoading'
 import Cards from '../Cards/NetflixCards'
 import Header from '../Header/NetflixHeader'
 import FooterContainer from '../Container/FooterContainer'
+import Player from '../VideoPlayer/Player'
+import Fuse from 'fuse.js'
 
 export default function BrowseContainer({ slides }) {
   const { firebase } = useContext(FirebaseContext)
@@ -24,6 +26,20 @@ export default function BrowseContainer({ slides }) {
   useEffect(() => {
     setSlidesRow(slides[category])
   }, [slides, category])
+
+  useEffect(() => {
+    const option = {
+      keys: ['data.title', 'data.slug'],
+    }
+    const fuse = new Fuse(slidesRow, option)
+    const results = fuse.search(search).map(({ item }) => item)
+    console.log(results)
+    if (slidesRow.length > 0 && search.length > 3 && results.length > 0) {
+      setSlidesRow(results)
+    } else {
+      setSlidesRow(slides[category])
+    }
+  }, [search, category, slides, slidesRow])
 
   return profile.displayName ? (
     <>
@@ -79,7 +95,10 @@ export default function BrowseContainer({ slides }) {
               ))}
             </Cards.Frame>
             <Cards.Feature category={category}>
-              <p>Feature section</p>
+              <Player>
+                <Player.Button />
+                <Player.Video src='/videos/Cyberpunk.mp4' />
+              </Player>
             </Cards.Feature>
           </Cards>
         ))}
