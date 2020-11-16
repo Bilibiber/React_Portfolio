@@ -14,7 +14,7 @@ function Navbar() {
   const closeMenu = () => setOpen(false)
 
   const showButton = () => {
-    if (window.innerWidth <= 960) setButton(false)
+    if (window.innerWidth <= 960 && button == true) setButton(false)
     else setButton(true)
   }
 
