@@ -39,7 +39,7 @@ NetflixCards.Info = function NetflixCardsInfo({ children, ...restProps }) {
 }
 
 NetflixCards.Item = function NetflixCardsItem({ item, children, ...restProps }) {
-  const { setDetail, setItem, showDetail } = useContext(CardsContext)
+  const { setDetail, setItem } = useContext(CardsContext)
   return (
     <Item
       {...restProps}

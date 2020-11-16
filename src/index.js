@@ -5,11 +5,9 @@ import { firebase } from './Netflix/lib/firebase.prod'
 import { FirebaseContext } from './Netflix/Context/firebase'
 
 ReactDOM.render(
-  <>
-    <FirebaseContext.Provider value={{ firebase }}>
-      <App />
-    </FirebaseContext.Provider>
-  </>,
+  <FirebaseContext.Provider value={{ firebase }}>
+    <App />
+  </FirebaseContext.Provider>,
 
   document.getElementById('root'),
 )
