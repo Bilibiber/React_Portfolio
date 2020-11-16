@@ -18,28 +18,28 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Redirect exact from="/" to="/Netflix" />
-          <Route path="/home" exact component={Home} />
-          <Route path="/codePen" exact component={CodePen} />
-          <Route path="/TodoList" exact component={TodoList} />
+          <Redirect exact from='/' to='/home' />
+          <Route path='/home' exact component={Home} />
+          <Route path='/codePen' exact component={CodePen} />
+          <Route path='/TodoList' exact component={TodoList} />
 
-          <IsUserRedirect user={user} loggedInPath="/Netflix/browse" path="/Netflix" exact>
+          <IsUserRedirect user={user} loggedInPath='/Netflix/browse' path='/Netflix' exact>
             <Netflix />
           </IsUserRedirect>
 
-          <IsUserRedirect user={user} loggedInPath="/Netflix/browse" path="/Netflix/signIn" exact>
+          <IsUserRedirect user={user} loggedInPath='/Netflix/browse' path='/Netflix/signIn' exact>
             <NetflixSignIn />
           </IsUserRedirect>
 
-          <IsUserRedirect user={user} loggedInPath="/Netflix/browse" path="/Netflix/signUp" exact>
+          <IsUserRedirect user={user} loggedInPath='/Netflix/browse' path='/Netflix/signUp' exact>
             <NetflixSignUp />
           </IsUserRedirect>
-          <ProtectedRoute user={user} path="/Netflix/browse" exact>
+          <ProtectedRoute user={user} path='/Netflix/browse' exact>
             <NetflixBrowse />
           </ProtectedRoute>
 
-          <Redirect exact from="/MuiTodo" to="/MuiTodo/main" />
-          <Route path="/MuiTodo/:page?" exact render={(props) => <MuiNav {...props} />} />
+          <Redirect exact from='/MuiTodo' to='/MuiTodo/main' />
+          <Route path='/MuiTodo/:page?' exact render={(props) => <MuiNav {...props} />} />
         </Switch>
       </Router>
     </>
