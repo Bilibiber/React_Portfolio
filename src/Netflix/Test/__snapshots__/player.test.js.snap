@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Player / > renders the <Player/> with a Cyberpunk video 1`] = `
+<div
+  class="styledPlayer__Container-sc-109kg0g-0"
+>
+  <button
+    class="styledPlayer__Button-sc-109kg0g-4 ctRYyZ"
+  >
+    Play
+  </button>
+</div>
+`;
