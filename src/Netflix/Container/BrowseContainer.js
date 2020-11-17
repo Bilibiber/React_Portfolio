@@ -33,7 +33,6 @@ export default function BrowseContainer({ slides }) {
     }
     const fuse = new Fuse(slidesRow, option)
     const results = fuse.search(search).map(({ item }) => item)
-    console.log(results)
     if (slidesRow.length > 0 && search.length > 3 && results.length > 0) {
       setSlidesRow(results)
     } else {
