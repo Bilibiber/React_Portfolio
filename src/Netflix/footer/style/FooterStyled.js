@@ -44,3 +44,29 @@ export const Break = styled.div`
   flex-basis: 100%;
   height: 0;
 `
+export const BiliBiber = styled.div`
+  padding: 10px 70px 20px 70px;
+  bottom: 0;
+  background-color: #242424;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`
+export const Logo = styled.div`
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+`
+export const Group = styled.div`
+  a {
+    color: #fff;
+    font-size: ${({ font }) => font || '24px'};
+    margin-right: ${({ right }) => right || '0'};
+    margin-left: 20px;
+  }
+`

@@ -10,6 +10,7 @@ import Netflix from './Netflix/pages/Netflix-home'
 import NetflixSignIn from './Netflix/pages/SignIn'
 import NetflixSignUp from './Netflix/pages/SignUp'
 import NetflixBrowse from './Netflix/pages/Browse'
+import About from './HomePage/about'
 import { IsUserRedirect, ProtectedRoute } from './Netflix/Auth/AuthRoute'
 import useAuthListener from './Netflix/Hooks/AuthListener'
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Router>
         <Switch>
           <Redirect exact from='/' to='/home' />
+          <Route path='/about' exact component={About} />
           <Route path='/home' exact component={Home} />
           <Route path='/codePen' exact component={CodePen} />
           <Route path='/TodoList' exact component={TodoList} />

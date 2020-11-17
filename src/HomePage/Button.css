@@ -1,37 +1,38 @@
-.btn{
-    padding: 8px 20px;
-    border-radius: 2px;
-    outline: none;
-    border:none;
-    cursor: pointer;
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
-.btn-p{
-    background-color: #fff;
-    color: #242424;
-    border: 1px solid #fff;
+.btn-p {
+  background-color: #fff;
+  color: #242424;
+  border: 1px solid #fff;
 }
 
-.btn-out{
-    background-color: transparent;
-    color: #fff;
-    padding: 8px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-out;
+.btn-out {
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid #fff;
+  transition: all 0.3s ease-out;
 }
 
 .btn-m {
-    padding: 8px 20px;
-    font-size: 20px;
+  padding: 8px 20px;
+  font-size: 20px;
 }
 
-.btn-l{
-    padding: 12px 26px;
-    font-size:20px;
+.btn-l {
+  padding: 12px 26px;
+  font-size: 20px;
 }
 
-.btn-m:hover,.btn-l :hover{
-    background-color: #fff;
-    color: #242424;
-    transition: all 0.3s ease-out;
+.btn-m:hover,
+.btn-l :hover {
+  background-color: #fff;
+  color: #242424;
+  transition: all 0.3s ease-out;
 }

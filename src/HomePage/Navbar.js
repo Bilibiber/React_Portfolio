@@ -50,11 +50,6 @@ function Navbar() {
                 Resume
               </Link>
             </li>
-            <li>
-              <Link to='/sign-up' className='nav-links-mobile' onClick={closeMenu}>
-                Click me
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>
