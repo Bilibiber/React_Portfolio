@@ -6,12 +6,12 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 
 export default function Home() {
-    return (
-        <>
-            <Navbar/>
-            <MainSection/>
-            <Cards/>
-            <Footer/>
-        </>
-    )
+  return (
+    <>
+      <Navbar />
+      <MainSection />
+      <Cards />
+      <Footer />
+    </>
+  )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import NetflixFooter from '../footer/Netflix-footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faAlipay, faWeixin } from '@fortawesome/free-brands-svg-icons'
 import { faFan } from '@fortawesome/free-solid-svg-icons'
 function FooterContainer() {
   return (

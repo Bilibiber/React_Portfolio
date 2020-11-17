@@ -15,7 +15,7 @@ function MainSection() {
     <>
       <div className='main-container'>
         <video src='../videos/Cyberpunk.mp4' type='video/mp4' autoPlay loop muted />
-        <h1>Welcome Come To BiliBiber</h1>
+        <h1>Welcome To BiliBiber</h1>
         <p>Shout out to CypherPunk.</p>
         <div className='main-btns'>
           <button className='btn btn-m btn-out' onClick={Jump}>

@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faYoutube, faAlipay, faWeixin } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube, faWeixin } from '@fortawesome/free-brands-svg-icons'
 import { faFan, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function Footer() {
@@ -32,15 +32,12 @@ function Footer() {
           </div>
           <small className='website-rights'>Blibiber © 2020</small>
           <div className='social-icons'>
-            <Link className='social-icon-link instagram' to='/' target='_blank' aria-label='Instagram'>
-              <FontAwesomeIcon icon={faInstagram} />
+            <Link className='social-icon-link' to='/home' aria-label='Instagram'>
+              <FontAwesomeIcon icon={faWeixin} />
             </Link>
-            <Link className='social-icon-link youtube' to='/' target='_blank' aria-label='Youtube'>
+            <a className='social-icon-link' href='https://space.bilibili.com/430176251' target='_blank' rel='noopener noreferrer'>
               <FontAwesomeIcon icon={faYoutube} />
-            </Link>
-            <Link className='social-icon-link alipay' to='Alipay' target='_blank' aria-label='Alipay'>
-              <FontAwesomeIcon icon={faAlipay} />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

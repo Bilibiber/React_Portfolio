@@ -20,6 +20,11 @@ function about() {
 
   return (
     <>
+      <h1 className='h1'>
+        <a className='ha' href='/home'>
+          Still developing, Coming soon...
+        </a>
+      </h1>
       <div className='introLogo'>
         <svg id='logo' width='1169' height='150' viewBox='0 0 1169 150' fill='none' xmlns='http://www.w3.org/2000/svg'>
           {/* <mask id='path-1-outside-1' maskUnits='userSpaceOnUse' x='0.25' y='0.75' width='1169' height='150' fill='black'>

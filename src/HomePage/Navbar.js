@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFan, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import MuiDialog from './MuiDialog'
 import './Navbar.css'
 
 function Navbar() {
+  const [openDialog, setOpenDialog] = useState(false)
+
   const [open, setOpen] = useState(false)
 
   const [button, setButton] = useState(true)
@@ -14,7 +17,7 @@ function Navbar() {
   const closeMenu = () => setOpen(false)
 
   const showButton = () => {
-    if (window.innerWidth <= 960 && button == true) setButton(false)
+    if (window.innerWidth <= 960 && button === true) setButton(false)
     else setButton(true)
   }
 
@@ -46,13 +49,40 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/resume' className='nav-links' onClick={closeMenu}>
+              <a
+                href={require('../files/郭帆-詹姆斯麦迪逊大学-2019年12月.pdf')}
+                download='郭帆-詹姆斯麦迪逊大学-2019年12月'
+                className='nav-links'
+                onClick={() => {
+                  closeMenu()
+                  // setOpenDialog(!openDialog)
+                }}
+              >
                 Resume
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
       </nav>
+      <MuiDialog open={openDialog} setOpenDialog={setOpenDialog}>
+        <MuiDialog.Title>Resume</MuiDialog.Title>
+        <MuiDialog.Content dividers>
+          <MuiDialog.Button variant='outlined' color='primary' href='../files/郭帆-詹姆斯麦迪逊大学-2019年12月.pdf' download>
+            中文版
+          </MuiDialog.Button>
+          <a href={require('../files/郭帆-詹姆斯麦迪逊大学-2019年12月.pdf')} download='郭帆-詹姆斯麦迪逊大学-2019年12月'>
+            Resume
+          </a>
+          <MuiDialog.Button variant='outlined' color='primary' disabled>
+            English
+          </MuiDialog.Button>
+        </MuiDialog.Content>
+        <MuiDialog.Actions>
+          <MuiDialog.CloseButton open={openDialog} setOpenDialog={setOpenDialog} color='primary'>
+            Close
+          </MuiDialog.CloseButton>
+        </MuiDialog.Actions>
+      </MuiDialog>
     </>
   )
 }
