@@ -110,6 +110,11 @@
 .social-icon-link {
   color: #fff;
   font-size: 24px;
+  opacity: 0.8;
+}
+
+.social-icon-link:hover {
+  opacity: 1;
 }
 
 .social-media {
@@ -148,6 +153,10 @@
 .website-rights {
   color: #fff;
   margin-bottom: 16px;
+}
+
+#bili {
+  font-size: 27px;
 }
 
 @media screen and (max-width: 820px) {

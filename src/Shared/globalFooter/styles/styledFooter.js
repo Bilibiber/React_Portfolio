@@ -4,14 +4,23 @@ import { Link } from 'react-router-dom'
 export const LogoLink = styled(Link)`
   color: #757575;
   font-size: 32px;
+  font-weight: bold;
   text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
 `
 
 export const IconLink = styled.a`
   color: #757575;
-  font-size: 32px;
+  font-size: ${({ font }) => font || '32px'};
   text-decoration: none;
-  margin-left: 18px;
+  margin-left: 28px;
+
+  &:hover {
+    color: white;
+  }
 `
 
 export const Container = styled.div`

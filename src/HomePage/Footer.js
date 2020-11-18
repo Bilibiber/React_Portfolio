@@ -2,8 +2,9 @@ import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faGithub, faWeixin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faWeixin } from '@fortawesome/free-brands-svg-icons'
 import { faFan, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { RiBilibiliLine } from 'react-icons/ri'
 
 function Footer() {
   return (
@@ -36,7 +37,7 @@ function Footer() {
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a className='social-icon-link' href='https://space.bilibili.com/430176251' target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faYoutube} />
+              <RiBilibiliLine id='bili' />
             </a>
           </div>
         </div>

@@ -2,7 +2,8 @@ import React from 'react'
 import GlobalFooter from '../../Shared/globalFooter/globalFooter'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFan } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { RiBilibiliLine } from 'react-icons/ri'
 function GlobalFooterContainer() {
   return (
     <>
@@ -19,8 +20,8 @@ function GlobalFooterContainer() {
           <GlobalFooter.IconLink href='https://github.com/FanGuo484' target='_blank' rel='noopener noreferrer'>
             <FontAwesomeIcon icon={faGithub} />
           </GlobalFooter.IconLink>
-          <GlobalFooter.IconLink href='https://space.bilibili.com/430176251' target='_blank' rel='noopener noreferrer'>
-            <FontAwesomeIcon icon={faYoutube} />
+          <GlobalFooter.IconLink font='36px' href='https://space.bilibili.com/430176251' target='_blank' rel='noopener noreferrer'>
+            <RiBilibiliLine />
           </GlobalFooter.IconLink>
         </GlobalFooter.Group>
       </GlobalFooter>
