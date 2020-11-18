@@ -4,11 +4,8 @@ import { Link as ReactRouterLink } from 'react-router-dom'
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
-  opacity: 0.9;
   background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover no-repeat;
-  height: ${(props) => props.height || '100%'};
-
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
   }
 `
@@ -19,11 +16,9 @@ export const Container = styled.div`
   padding: 18px 0;
   justify-content: space-between;
   align-items: center;
-
   a {
     display: flex;
   }
-
   @media (max-width: 1000px) {
     margin: 0 30px;
   }
@@ -108,6 +103,10 @@ export const HeaderFeature = styled.div`
   display: flex;
   flex-direction: column;
   margin: 30px;
+
+  @media (max-width: 1100px) {
+    ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `display: none;`}
+  }
 `
 export const HeaderTitle = styled.h2`
   margin-top: 120px;

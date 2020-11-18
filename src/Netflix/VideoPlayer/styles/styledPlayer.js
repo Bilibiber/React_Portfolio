@@ -78,6 +78,7 @@ export const Button = styled.button`
   margin-top: 10px;
   cursor: pointer;
   transition: background-color 0.5s ease;
+  margin-bottom: ${({ bottom }) => bottom || '0px'};
 
   &:hover {
     background-color: #ff1e1e;

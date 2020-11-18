@@ -2,7 +2,6 @@ import React from 'react'
 import FAQData from '../preloadedData/FAQ.json'
 import NetflixFAQ from '../FAQ/NetflixFAQ'
 import NetflixForm from '../Forms/NetflixForm'
-
 export default function FAQContainer() {
   return (
     <>

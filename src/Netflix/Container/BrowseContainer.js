@@ -43,7 +43,7 @@ export default function BrowseContainer({ slides }) {
   return profile.displayName ? (
     <>
       {loading ? <NetflixLoading src={user.photoURL} /> : <NetflixLoading.PageRelease />}
-      <Header src='joker1' height='100vh'>
+      <Header src='joker1' height='100vh' dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
             <Header.Logo src='/images/icons/logo.svg' alt='Home' to='/Netflix' />
@@ -70,16 +70,19 @@ export default function BrowseContainer({ slides }) {
             </Header.Profiles>
           </Header.Group>
         </Header.Frame>
-        <Header.HeaderFeature>
+        <Header.HeaderFeature dontShowOnSmallViewPort>
           <Header.HeaderTitle>Watch Joker Now !</Header.HeaderTitle>
           <Header.HeaderText>
             In 1981, party clown and aspiring stand-up comedian Arthur Fleck lives with his mother, Penny, in Gotham City. Gotham is rife with crime and unemployment, leaving swaths of the population disenfranchised and impoverished. Arthur suffers
             from a medical disorder that causes him to laugh at inappropriate times, depending on social services for medication.
           </Header.HeaderText>
-          <Header.PlayButton>Play</Header.PlayButton>
+          <Player>
+            <Player.Button bottom='120px' />
+            <Player.Video src='/videos/Cyberpunk.mp4' />
+          </Player>
         </Header.HeaderFeature>
       </Header>
-      <Cards.Group>
+      <Cards.Group margin='10px' dontShowOnSmallViewPort>
         {slidesRow.map((items) => (
           <Cards key={`${category}-${items.title.toLowerCase()}`}>
             <Cards.Title>{items.title}</Cards.Title>

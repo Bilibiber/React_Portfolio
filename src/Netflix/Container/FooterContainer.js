@@ -1,7 +1,6 @@
 import React from 'react'
 import NetflixFooter from '../footer/Netflix-footer'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFan } from '@fortawesome/free-solid-svg-icons'
+import GlobalFooterContainer from './GlobalFooterContainer'
 function FooterContainer() {
   return (
     <>
@@ -38,21 +37,8 @@ function FooterContainer() {
             <NetflixFooter.Link href='#'>Legal Notices</NetflixFooter.Link>
           </NetflixFooter.Column>
         </NetflixFooter.Row>
-        <NetflixFooter.Break />
       </NetflixFooter>
-      <NetflixFooter.BiliBiber>
-        <NetflixFooter.Group font='32px' right='10px'>
-          <NetflixFooter.Logo>
-            <NetflixFooter.Link href='/home'>
-              Blibiber
-              <FontAwesomeIcon icon={faFan} />
-            </NetflixFooter.Link>
-          </NetflixFooter.Logo>
-        </NetflixFooter.Group>
-        <NetflixFooter.Group>
-          <small className='website-rights'>Blibiber © 2020</small>
-        </NetflixFooter.Group>
-      </NetflixFooter.BiliBiber>
+      <GlobalFooterContainer />
     </>
   )
 }

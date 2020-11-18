@@ -16,7 +16,7 @@ export const Container = styled.div`
   margin-bottom: 50px;
   box-sizing: border-box;
 
-  > ${Title} {
+  ${Title} {
     @media (max-width: 1000px) {
       margin-left: 30px;
     }
@@ -32,10 +32,13 @@ export const Group = styled.div`
   align-items: ${(props) => props.alignItem || ''};
   margin: ${(props) => props.margin || '0'};
 
-  > ${Container}:first-of-type {
+  ${Container}:first-of-type {
     @media (max-width: 1100px) {
       margin-top: -150px;
     }
+  }
+  @media (max-width: 1100px) {
+    ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `margin-top: 200px;`}
   }
 `
 
