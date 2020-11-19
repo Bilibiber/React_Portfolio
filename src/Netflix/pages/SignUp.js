@@ -33,6 +33,7 @@ function SignUp() {
         setEmail('')
         setPassword('')
         setName('')
+        setErrors(error)
       })
   }
   const isInvalid = password === '' || email === '' || firstName === ''
@@ -44,9 +45,23 @@ function SignUp() {
           <UserForm.Title>Sign Up</UserForm.Title>
           {errors && <UserForm.Errors>{errors}</UserForm.Errors>}
           <UserForm.Base onSubmit={handleSignUp}>
-            <UserForm.Input placeholder='First Name' value={firstName} onChange={({ target }) => setName(target.value)} />
-            <UserForm.Input placeholder='Email address' value={email} onChange={({ target }) => setEmail(target.value)} />
-            <UserForm.Input type='password' placeholder='Password' autoComplete='off' value={password} onChange={({ target }) => setPassword(target.value)} />
+            <UserForm.Input
+              placeholder='First Name'
+              value={firstName}
+              onChange={({ target }) => setName(target.value)}
+            />
+            <UserForm.Input
+              placeholder='Email address'
+              value={email}
+              onChange={({ target }) => setEmail(target.value)}
+            />
+            <UserForm.Input
+              type='password'
+              placeholder='Password'
+              autoComplete='off'
+              value={password}
+              onChange={({ target }) => setPassword(target.value)}
+            />
             <UserForm.Button disabled={isInvalid} type='submit'>
               Sign Up
             </UserForm.Button>
@@ -54,7 +69,9 @@ function SignUp() {
           <UserForm.Text>
             Already a member ? <UserForm.Link to='/Netflix/signIn'>Sign In here</UserForm.Link>
           </UserForm.Text>
-          <UserForm.TextSmall>This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more</UserForm.TextSmall>
+          <UserForm.TextSmall>
+            This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more
+          </UserForm.TextSmall>
         </UserForm>
       </Header>
       <NetflixFooter />

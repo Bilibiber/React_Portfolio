@@ -1,9 +1,11 @@
-body {
-  margin: 0;
-}
-
 .top-pane {
   background-color: hsl(225, 6%, 25%);
+}
+
+.PaneContainer {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
 }
 
 .pane {

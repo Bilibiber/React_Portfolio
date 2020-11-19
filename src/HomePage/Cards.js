@@ -9,10 +9,20 @@ function Cards() {
       <div className='cards-container'>
         <div className='cards-wrapper'>
           <ul className='cards-items'>
-            <CardItems src='../images/CodePen.jpg' text='A live web development editor, enabled HTML, CSS and JavaScript' label='CodePen' path='/codePen' />
-            <CardItems src='../images/netflix-logo.png' text='An Netflix website colone' label='Netflix' path='/Netflix' />
-            <CardItems src='../images/formik_black.jpg' text='Developing' label='Formik' path='/formik' />
-            <CardItems src='../images/formik_black.jpg' text='Developing' label='Todo List' path='/TodoList' />
+            <CardItems
+              src='../images/CodePen.jpg'
+              text='A live web development editor, enabled HTML, CSS and JavaScript'
+              label='CodePen'
+              path='/codePen'
+            />
+            <CardItems
+              src='../images/netflix-logo.png'
+              text='An Netflix website colone'
+              label='Netflix'
+              path='/Netflix'
+            />
+            <CardItems src='../images/coming-soon5.png' text='Developing' label='E-Commerce' path='/ECommerce' />
+            <CardItems src='../images/coming-soon5.png' text='Developing' label='Todo List' path='/MuiTodo' />
           </ul>
         </div>
       </div>
