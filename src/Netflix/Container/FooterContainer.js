@@ -1,6 +1,6 @@
 import React from 'react'
 import NetflixFooter from '../footer/Netflix-footer'
-import GlobalFooterContainer from './GlobalFooterContainer'
+import GlobalFooterContainer from '../../Shared/container/GlobalFooterContainer'
 function FooterContainer() {
   return (
     <>

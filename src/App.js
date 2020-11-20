@@ -9,11 +9,11 @@ import NetflixSignIn from './Netflix/pages/SignIn'
 import NetflixSignUp from './Netflix/pages/SignUp'
 import NetflixBrowse from './Netflix/pages/Browse'
 import About from './HomePage/about'
-import MuiNav from './Mui-todo/MuiNav'
 import { IsUserRedirect, ProtectedRoute } from './Netflix/Auth/AuthRoute'
 import useAuthListener from './Netflix/Hooks/AuthListener'
 import PlayGround from './PlayGround/Redux'
-
+import TodoList from './TodoList/TodoList'
+import Pokemon from './Pokemon/PokemonIndex'
 function App() {
   const { user } = useAuthListener()
 
@@ -26,6 +26,8 @@ function App() {
           <Route path='/home' exact component={Home} />
           <Route path='/codePen' exact component={CodePen} />
           <Route path='/redux' exact component={PlayGround} />
+          <Route path='/TodoList' exact component={TodoList} />
+          <Route path='/pokemon' exact component={Pokemon} />
           <IsUserRedirect user={user} loggedInPath='/Netflix/browse' path='/Netflix' exact>
             <Netflix />
           </IsUserRedirect>
@@ -38,8 +40,6 @@ function App() {
           <ProtectedRoute user={user} path='/Netflix/browse' exact>
             <NetflixBrowse />
           </ProtectedRoute>
-          <Redirect exact from='/MuiTodo' to='/MuiTodo/main' />
-          <Route path='/MuiTodo/:page?' exact render={(props) => <MuiNav {...props} />} />
         </Switch>
       </Router>
     </>

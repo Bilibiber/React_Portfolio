@@ -1,7 +1,5 @@
-import React, { componentDidUpdate } from 'react'
+import React from 'react'
 import './mainSection.css'
-import { Button } from './Button'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../App.css'
 import './Button.css'
 
