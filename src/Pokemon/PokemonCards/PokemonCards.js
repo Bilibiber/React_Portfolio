@@ -1,5 +1,5 @@
 import React from 'react'
-import { Abilities, Body, Container, Item, Title, SubTitle, Text, Types, Picture } from './styles/StyledPokemonCards'
+import { Abilities, Body, Container, Item, Title, SubTitle, Text, Types, Picture, PictureWrapper } from './styles/StyledPokemonCards'
 
 export default function PokemonCards({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
@@ -35,4 +35,8 @@ PokemonCards.Abilities = function PokemonCardsAbilities({ children, ...restProps
 
 PokemonCards.Picture = function PokemonCardsPicture({ children, ...restProps }) {
   return <Picture {...restProps}>{children}</Picture>
+}
+
+PokemonCards.PictureWrapper = function PokemonCardsPictureWrapper({ children, ...restProps }) {
+  return <PictureWrapper {...restProps}>{children}</PictureWrapper>
 }

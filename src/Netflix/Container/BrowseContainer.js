@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { ProfileContainer } from './ProfilesContainer'
 import { FirebaseContext } from '../Context/firebase'
-import NetflixLoading from '../Loading/NetflixLoading'
+import NetflixLoading from '../../Shared/Loading/Loading'
 import Cards from '../Cards/NetflixCards'
 import Header from '../Header/NetflixHeader'
 import FooterContainer from '../Container/FooterContainer'
@@ -29,7 +29,7 @@ export default function BrowseContainer({ slides }) {
 
   useEffect(() => {
     const option = {
-      keys: ['data.title', 'data.slug'],
+      keys: ['data.title', 'data.slug']
     }
     const fuse = new Fuse(slidesRow, option)
     const results = fuse.search(search).map(({ item }) => item)
@@ -42,7 +42,7 @@ export default function BrowseContainer({ slides }) {
 
   return profile.displayName ? (
     <>
-      {loading ? <NetflixLoading src={user.photoURL} /> : <NetflixLoading.PageRelease />}
+      {loading ? <NetflixLoading src={`/images/user/${user.photoURL}.png`} backgroundColor='black' /> : <NetflixLoading.PageRelease />}
       <Header src='joker1' height='100vh' dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
@@ -73,8 +73,8 @@ export default function BrowseContainer({ slides }) {
         <Header.HeaderFeature dontShowOnSmallViewPort>
           <Header.HeaderTitle>Watch Joker Now !</Header.HeaderTitle>
           <Header.HeaderText>
-            In 1981, party clown and aspiring stand-up comedian Arthur Fleck lives with his mother, Penny, in Gotham City. Gotham is rife with crime and unemployment, leaving swaths of the population disenfranchised and impoverished. Arthur suffers
-            from a medical disorder that causes him to laugh at inappropriate times, depending on social services for medication.
+            In 1981, party clown and aspiring stand-up comedian Arthur Fleck lives with his mother, Penny, in Gotham City. Gotham is rife with crime and unemployment, leaving swaths of the population
+            disenfranchised and impoverished. Arthur suffers from a medical disorder that causes him to laugh at inappropriate times, depending on social services for medication.
           </Header.HeaderText>
           <Player>
             <Player.Button bottom='120px' />
