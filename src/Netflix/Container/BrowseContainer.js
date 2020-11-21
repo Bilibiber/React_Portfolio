@@ -42,7 +42,7 @@ export default function BrowseContainer({ slides }) {
 
   return profile.displayName ? (
     <>
-      {loading ? <NetflixLoading src={`/images/user/${user.photoURL}.png`} backgroundColor='black' /> : <NetflixLoading.PageRelease />}
+      {loading ? <NetflixLoading src={`/images/users/${user.photoURL}.png`} backgroundColor='black' /> : <NetflixLoading.PageRelease />}
       <Header src='joker1' height='100vh' dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
