@@ -3,12 +3,13 @@ import styled from 'styled-components/macro'
 export const Body = styled.div`
   background: #f5de9f;
 `
+
 export const Container = styled.div`
   width: 70%;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 15px;
 `
 
 export const Item = styled.div`

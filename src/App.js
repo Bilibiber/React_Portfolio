@@ -1,6 +1,4 @@
 import React from 'react'
-import './App.css'
-import 'normalize.css'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import Home from './HomePage/Home'
 import CodePen from './CodePen/CodePen'
@@ -14,6 +12,9 @@ import useAuthListener from './Netflix/Hooks/AuthListener'
 import PlayGround from './PlayGround/Redux'
 import TodoList from './TodoList/TodoList'
 import Pokemon from './Pokemon/PokemonIndex'
+import './App.css'
+import 'normalize.css'
+
 function App() {
   const { user } = useAuthListener()
 
