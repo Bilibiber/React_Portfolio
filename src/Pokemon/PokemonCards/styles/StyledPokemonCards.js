@@ -39,12 +39,16 @@ export const SubTitle = styled.p`
   font-weight: bold;
 `
 export const Text = styled.p`
-  color: white;
+  color: #757575;
   margin-left: 12px;
   padding: 5px;
   border-radius: 5px;
   text-align: center;
   background-color: #757575;
+
+  &:hover {
+    color: white;
+  }
 `
 
 export const Types = styled.div`
