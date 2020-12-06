@@ -1,10 +1,10 @@
-import React from 'react'
-import './Footer.css'
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faWeixin } from '@fortawesome/free-brands-svg-icons'
-import { faFan, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { RiBilibiliLine } from 'react-icons/ri'
+import React from "react";
+import "./Footer.css";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faWeixin } from "@fortawesome/free-brands-svg-icons";
+import { faFan, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { RiBilibiliLine } from "react-icons/ri";
 
 function Footer() {
   return (
@@ -19,7 +19,7 @@ function Footer() {
           </div>
           <div className='iconPadding'>
             <FontAwesomeIcon icon={faWeixin} />
-            <span>gf771026471</span>
+            <span>bilibiber</span>
           </div>
         </div>
       </section>
@@ -33,17 +33,28 @@ function Footer() {
           </div>
           <small className='website-rights'>Bilibiber © 2020</small>
           <div className='social-icons'>
-            <a className='social-icon-link' href='https://github.com/FanGuo484' target='_blank' rel='noopener noreferrer' alt='github'>
+            <a
+              className='social-icon-link'
+              href='https://github.com/FanGuo484'
+              target='_blank'
+              rel='noopener noreferrer'
+              alt='github'
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a className='social-icon-link' href='https://space.bilibili.com/430176251' target='_blank' rel='noopener noreferrer'>
+            <a
+              className='social-icon-link'
+              href='https://space.bilibili.com/430176251'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <RiBilibiliLine id='bili' />
             </a>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
