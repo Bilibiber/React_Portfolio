@@ -1,5 +1,16 @@
 This is my portfolio repo based on react. 
 
+https://my-profile-f6c7c.web.app/home
+
+styled-component, react, react-router, some redux, firebase-auth, firestore. 
+
+developing my own backend using Express. 
+
+Any Question?
+
+email : guofx@dukes.jmu.edu
+weChat: bilibiber
+
 ## Available Scripts
 
 In the project directory, you can run:
